@@ -10,7 +10,7 @@ $ pip install addax
 
 ## Usage
 
-countpy can be used to count words in a text file and plot results as follows:
+`addax` can be used to clean target text and then apply sentiment analysis to it in order to return a sentiment score and label, as follows:
 
 ```
 from addax.addax import (
