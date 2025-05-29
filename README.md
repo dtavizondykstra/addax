@@ -1,6 +1,6 @@
 # addax
 
-Database abstraction library
+Text analysis library
 
 ## Installation
 
@@ -10,7 +10,18 @@ $ pip install addax
 
 ## Usage
 
-- TODO
+countpy can be used to count words in a text file and plot results as follows:
+
+```
+from addax.addax import (
+    read_csv,
+    process_sentiment,
+)
+
+df = read_csv("file.csv") # path to your file
+process_sentiment(df=df, target_column="comment", include_subjectivity=True, label=True)
+
+```
 
 ## Contributing
 
