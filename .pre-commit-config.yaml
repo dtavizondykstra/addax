@@ -13,3 +13,14 @@ repos:
         args: ['--pytest-test-first']
     -   id: pretty-format-json
     -   id: requirements-txt-fixer
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  # Ruff version.
+  rev: v0.11.11
+  hooks:
+    # Run the linter.
+    -   id: ruff-check
+        types_or: [ python, pyi ]
+        args: [ --fix ]
+    # Run the formatter.
+    -   id: ruff-format
+        types_or: [ python, pyi ]
