@@ -17,6 +17,7 @@ pre-commit = "^4.2.0"
 pytest = "^8.3.5"
 pytest-cov = "^6.1.1"
 ruff = "^0.11.11"
+python-semantic-release = {version = "^10.0.2", python = "^3.12"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
