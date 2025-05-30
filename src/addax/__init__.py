@@ -1,5 +1,6 @@
 # src/addax/__init__.py
-"""Addax: A DataFrame Processing Library"""
+"""Addax: A Text Analysis Data Library."""
+
 # read version from installed package
 from importlib.metadata import version
 
@@ -7,34 +8,34 @@ __version__ = version("addax")
 
 
 from addax.addax import (
-    read_csv,
-    normalize_column_name,
-    normalize_series_text,
-    standardize_target_col_name,
-    standardize_headers,
-    standardize_target_col_data,
-    remove_rows_missing_target,
-    analyze_sentiment_text,
     analyze_sentiment_dataframe,
-    process_sentiment,
+    analyze_sentiment_text,
     label_polarity,
     label_subjectivity,
     logger,
+    normalize_column_name,
+    normalize_series_text,
+    process_sentiment,
+    read_csv,
+    remove_rows_missing_target,
+    standardize_headers,
+    standardize_target_col_data,
+    standardize_target_col_name,
 )
 
 __all__ = [
-    "read_csv",
-    "normalize_column_name",
-    "normalize_series_text",
-    "standardize_target_col_name",
-    "standardize_headers",
-    "standardize_target_col_data",
-    "remove_rows_missing_target",
-    "analyze_sentiment_text",
+    "__version__",
     "analyze_sentiment_dataframe",
-    "process_sentiment",
+    "analyze_sentiment_text",
     "label_polarity",
     "label_subjectivity",
     "logger",
-    "__version__",
+    "normalize_column_name",
+    "normalize_series_text",
+    "process_sentiment",
+    "read_csv",
+    "remove_rows_missing_target",
+    "standardize_headers",
+    "standardize_target_col_data",
+    "standardize_target_col_name",
 ]
