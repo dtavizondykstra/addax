@@ -18,6 +18,9 @@ pytest = "^8.3.5"
 pytest-cov = "^6.1.1"
 ruff = "^0.11.11"
 python-semantic-release = {version = "^10.0.2", python = "^3.12"}
+myst-nb = "^1.2.0"
+sphinx-autoapi = "^3.6.0"
+sphinx-rtd-theme = "^3.0.2"
 
 [tool.semantic_release]
 version_toml = [
